@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T&P Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>T&P Registration Form</h2>
+        <form onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <div id="nameError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <select id="branch" name="branch">
+                    <option value="">--Select Branch--</option>
+                    <option value="CSE">Computer Science Engineering</option>
+                    <option value="CSE">Artificial Intelligence & Machine Learning</option>
+                    <option value="CSE">Data Science Engineering</option>
+                    <option value="CSE">Cyber Security</option>
+                    <option value="CSE">Information Technology</option>
+                    <option value="ECE">Electronics and Communication Engineering</option>
+                    <option value="ME">Mechanical Engineering</option>
+                    <option value="CE">Civil Engineering</option>
+                    <option value="EE">Electrical Engineering</option>
+                </select>
+                <div id="branchError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" min="1" max="4">
+                <div id="yearError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="sem">Semester:</label>
+                <input type="number" id="sem" name="sem" min="1" max="8">
+                <div id="semError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="cgpa">CGPA:</label>
+                <input type="text" id="cgpa" name="cgpa">
+                <div id="cgpaError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile">
+                <div id="mobileError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <div id="emailError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                <div id="resumeError" class="error"></div>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    
+    
+    
+</body>
+</html>
